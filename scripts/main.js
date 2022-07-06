@@ -10,6 +10,8 @@ var card_5 = document.getElementById("card_5");
 var card_6 = document.getElementById("card_6");
 var card_7 = document.getElementById("card_7");
 var cards = document.getElementsByClassName("card");
+var card_description = document.getElementById("card_description");
+var c_name = document.getElementById("name");
 //---------------------------------------------
 //control--------------------------------------
 var i = 0; 
@@ -49,10 +51,17 @@ function display_card(x) {
     if (j == 0) {
     x.style.transitionDuration = "0.8s";
     x.style.width = "80%";
+    card_description.style.visibility = "visible";
+    card_description.style.top = "100px";
+    card_description.style.left = "450px";
+    c_name.style.left = "550px";
+    c_name.style.visibility = "visible";
+    c_name.style.top = "-20px";
     return j = 1;
     } else if( j > 0) {
         x.style.transitionDuration = "0.8s";
         x.style.width = "300px";
+        card_description.style.visibility = "hidden";
         return j = 0;
     }
 }

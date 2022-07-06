@@ -44,7 +44,7 @@
     width: 100%;
     box-sizing: border-box;
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
-    height: 35px;
+    height: 55px;
     top: 0px;
     left: 0px;
     position: absolute;
@@ -59,20 +59,11 @@
     transform: scale(0.7);
     filter: drop-shadow(1px 2px 2px grey);
 }
-@keyframes borde {
-    from {
-    }
-    to {
-        background-color: grey;
-        border-bottom-style: solid;
-        border-color: blue;
-    }
-}
 #mode:hover {
-    animation-name: borde;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite ;
+    transition-duration: 0.2s;
+    background-color: grey;
+    border-bottom-style: solid;
+    border-color: blue;
 }
 #title {
     font-family: 'Bebas Neue', cursive;
@@ -104,18 +95,19 @@
     height: 100%;
 }
 #menu:hover {
-    animation-name: borde;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
+    transition-duration: 0.2s;
+    background-color: grey;
+    border-bottom-style: solid;
+    border-color: blue;
 }
 #display {
     user-select: none;
     position: absolute;
-    top: 35px;
+    top: 55px;
     left: 0px;
     display: flex;
     flex-direction: column;
-    height: 153px;
+    height: 152px;
     width: 120px;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -228,7 +220,7 @@ h2 {
     justify-content: center;
 }
 .card {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 300px;
     height:400px;
     margin: 30px;
@@ -240,6 +232,8 @@ h2 {
     user-select: none;
     box-shadow: 1px 1px 3px black;
     transition-duration: 0.8s;
+    display: flex;
+    overflow: hidden;
 }
 .card:hover {
     transition-duration: 0.8s;
@@ -267,6 +261,21 @@ h2 {
     box-sizing: border-box;
 }
 #card_description {
+    color: rgb(0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 0.5px;
+    position: absolute;
     visibility: hidden;
-    color: wheat;
+    font-size: 20px;
+}
+#name {
+    color: black;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    height: 40px;
+    position: absolute;
+    visibility: hidden;
+    font-family: 'Satisfy', cursive;
+    font-weight: 300;
 }
