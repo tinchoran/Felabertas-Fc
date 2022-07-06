@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+#mode {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    animation-name: displaycc;
+    animation-fill-mode: backwards;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    border-right-style: solid;
+    border-right-color: black;
+}
+#container {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 25px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+    transform: scale(0.9);
+}
+#boton {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(94, 92, 92);
+    border-radius: 50%;
+    left: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+#header {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    height: 35px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: black ;
+}
+#home {
+    box-sizing: border-box;
+    transform: scale(0.7);
+    filter: drop-shadow(1px 2px 2px grey);
+}
+@keyframes borde {
+    from {
+    }
+    to {
+        background-color: grey;
+        border-bottom-style: solid;
+        border-color: blue;
+    }
+}
+#mode:hover {
+    animation-name: borde;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite ;
+}
+#title {
+    font-family: 'Bebas Neue', cursive;
+    justify-self: center;
+    position: absolute;
+    left: 43%;
+    user-select: none;
+    margin: 10px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#barritas {
+    transform: scale(0.7);
+    box-sizing: border-box;
+    position: relative;
+}
+#menu {
+    user-select: none;
+    cursor: pointer;
+    left: 0px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#menu:hover {
+    animation-name: borde;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+#display {
+    user-select: none;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 153px;
+    width: 120px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 1px 1px 5px black;
+    clip-path: inset(0% 0% 100% 0%);
+    background-color: #ffffff;
+}
+#gallery {
+    transform: scale(0.7);
+    filter: drop-shadow(1px 1px 2px grey);
+}
+#info {
+    transform: scale(0.7);
+    filter: drop-shadow(1px 1px 2px grey);
+}
+@keyframes displaycc {
+    0% {
+        border-bottom-color: black;
+        border-right-color: black;
+    }
+    30% {
+        border-bottom-color: red;
+        border-right-color: red
+    }
+    60% {
+        border-bottom-color: rgb(250, 79, 27);
+        border-right-color: rgb(250, 79, 27);
+    }
+    100% {
+        border-bottom-color: rgb(172, 8, 8);
+        border-right-color: rgb(172, 8, 8);
+    }
+}
+#image-container {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+    top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 5px rgb(58, 5, 5);
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(0, 0, 0);
+    background-image: url(../media/eso\ en\ eurogol\ 2.png);
+    background-size: cover;
+    background-position-y: -70px;
+}
+
+#foto {
+    height: 250px;
+    width: 250px;
+    margin-right: 30px;
+}
+#mes {
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    margin-right: 30px;
+}
+
+#principal {
+    background: linear-gradient(90deg, rgba(10,1,4,1) 0%, rgba(255,0,37,1) 50%, rgba(46,7,20,1) 100%);
+    background-size: cover;
+    width: 100%;
+    justify-self: center;
+    min-height: 900px;
+    position: absolute;
+    top: 436px;
+    left: 0px;
+}
+#plantilla {
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+h2 {
+    backdrop-filter: blur(2px);
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px black;
+    font-size: 35px;
+    background: none;
+    user-select: none;
+}
+#card-container {
+    width: 90%;
+    min-height: 700px;
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background-color: black;
+    width: 300px;
+    height:400px;
+    margin: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: center;
+    box-sizing: border-box;
+    position: relative;
+    user-select: none;
+    box-shadow: 1px 1px 3px black;
+    transition-duration: 0.8s;
+}
+.card:hover {
+    transition-duration: 0.8s;
+    transform: scale(1.05);
+}
+
+#card_image_container {
+    height: 100%;
+    background-color: white;
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border-radius: 20px;
+    user-select: none;
+}
+
+#card_image {
+    user-select: none;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    box-sizing: border-box;
+}
+#card_description {
+    visibility: hidden;
+    color: wheat;
+}
