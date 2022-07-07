@@ -68,6 +68,7 @@ function display_card(x) {
 
 
 
+
 document.getElementById("container").onclick = function() {
     general();
 };
